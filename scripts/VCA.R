@@ -115,14 +115,7 @@ run_vca <- function( assay ) {
 }
 
 main <- function() {
-	library("curl")
-	
 	setwd("your_directory_containing_the_downloaded_data_files/")
-	
-	url = "ftp://"
-	qc1samples = read.table(curl(url,"r"),StringsAsFactors=F)[,1]
-	url = "ftp://"
-	qc2samples = read.table(curl(url,"r"),StringsAsFactors=F)[,1]
 	
 	vars = list()
 	for( assay in c("gex","rnaseq","methyl","prot") ) {
