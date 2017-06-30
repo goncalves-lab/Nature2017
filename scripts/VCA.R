@@ -119,7 +119,7 @@ main <- function() {
 	
 	vars = list()
 	for( assay in c("gex","rnaseq","methyl","prot") ) {
-		vars[[assay]] = run_vca("gex")
+		vars[[assay]] = run_vca(assay)
 	}
 }
 
